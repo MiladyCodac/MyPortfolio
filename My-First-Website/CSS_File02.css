@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+.Main_text{
+    float: left;
+    }
+
+.Main_menu {
+    background: #826251;
+    height: 27px;
+    text-align:center;
+    border: 10px #ff5900 ;
+    }
+
+.Main_me {
+    background-image: url("Portfolio_Me02.png");
+    height:800px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 1px solid #568ea3;
+    background-attachment: fixed;
+}
+
+img {
+    transition:transform 0.25s ease;
+    width: 250px;
+    height: 250px;
+    object-fit:scale-down;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: transparent;
+   
+}
+
+img:hover {
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
+
+.parent {
+    height: 50;
+    overflow-y: hidden;
+    display: block;
+    }
+    .parent .child {
+    animation-name: appear;
+    animation-duration: 4s;
+    }
+    @keyframes appear {
+      from { transform: translateY(50) }
+      to {   transform: translateY(0)}
+}
